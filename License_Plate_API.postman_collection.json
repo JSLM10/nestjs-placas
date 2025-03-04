@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "556f7f82-4995-440e-9f0f-ff0675d64075",
+		"name": "API placas - Nestjs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42800340"
+	},
+	"item": [
+		{
+			"name": "Create License Plate",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"placa\": \"ABC123\",\r\n  \"marca\": \"Toyota\",\r\n  \"modelo\": 2022,\r\n  \"color\": \"Black\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/placas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"placas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All License Plates",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"placa\": \"ABC123\",\r\n  \"marca\": \"Toyota\",\r\n  \"modelo\": 2022,\r\n  \"color\": \"Black\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/placas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"placas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get License Plate by Number",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"placa\": \"ABC123\",\r\n  \"marca\": \"Toyota\",\r\n  \"modelo\": 2022,\r\n  \"color\": \"Black\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/placas/ABC123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"placas",
+						"ABC123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete License Plate",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"placa\": \"ABC123\",\r\n  \"marca\": \"Toyota\",\r\n  \"modelo\": 2022,\r\n  \"color\": \"Black\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/placas/ABC123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"placas",
+						"ABC123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
